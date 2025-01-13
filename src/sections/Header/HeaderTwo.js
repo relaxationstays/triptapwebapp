@@ -5,8 +5,14 @@ import ThemedInput from "../../components/InputFeild/ThemedInput";
 import { FaSearch } from "react-icons/fa";
 import { headerTwoSection } from "../../data/Data";
 import ThemedButton from "../../components/Button/Button";
+import { useMediaQuery } from "react-responsive";
 
 export default function HeaderTwo() {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const buttonsToDisplay = isMobile
+    ? headerTwoSection?.headerTwoSectionButton?.slice(0, 4)
+    : headerTwoSection?.headerTwoSectionButton;
+
   return (
     <Row style={{ width: "100%", paddingTop: 10 }} gutter={[16, 16]}>
       <Col xs={24} sm={12} md={8} lg={6} className="centerDiv">
@@ -33,7 +39,7 @@ export default function HeaderTwo() {
         lg={18}
         style={{ ...centerDiv, justifyContent: "right" }}
       >
-        {headerTwoSection?.headerTwoSectionButton?.map((item) => (
+        {buttonsToDisplay?.map((item) => (
           <ThemedButton
             type="button"
             style={{
