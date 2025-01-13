@@ -3,14 +3,11 @@
 
 https://peppy-custard-6b5fa9.netlify.app/
 
-
-
-
 **Install Prerequisites:**
  Ensure Node.js, npm, and a code editor are installed.  
  
 **Clone Repository:**
-Use git clone "https://github.com/relaxationstays/TripTap and navigate to the project folder.
+Use git clone "https://github.com/relaxationstays/triptapwebapp  and navigate to the project folder.
 
 **Install Dependencies:** 
 ****Run npm install.
