@@ -12,7 +12,7 @@ const FooterPage = () => {
           <Col>
             <ThemedText
               style={{
-                fontSize: "10rem",
+                fontSize: "6rem",
                 fontWeight: "bold",
                 color: "#fff",
                 padding: 0,
