@@ -25,7 +25,6 @@ export default function Main() {
             >
               {MainSection?.text1}
             </ThemedText>
-
             <ThemedButton
               type="button"
               style={{
@@ -58,7 +57,6 @@ export default function Main() {
             xs={24}
             md={12}
             style={{
-              // height: "50vh",
               width: "80%",
               display: "flex",
               justifyContent: "center",
@@ -72,7 +70,6 @@ export default function Main() {
                 justifyContent: "center",
                 alignItems: "center",
                 backgroundColor: "white",
-                // height: "80%",
                 borderRadius: 20,
                 padding: 20,
                 paddingTop: 40,

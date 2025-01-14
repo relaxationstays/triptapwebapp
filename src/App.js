@@ -16,7 +16,6 @@ function App() {
       theme={{
         token: {
           fontFamily: "Raleway",
-          // fontWeight: 400,
           fontSize: 15,
         },
       }}
@@ -25,7 +24,6 @@ function App() {
         <Header />
         <Main />
         <Bigpromopage />
-        {/* <AboutUspage /> */}
         <Recommend />
         <Best />
         <Banner />
