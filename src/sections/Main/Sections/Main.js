@@ -57,28 +57,32 @@ export default function Main() {
             xs={24}
             md={12}
             style={{
-              width: "80%",
-              display: "flex",
+              // width: "80%",
+              // display: "flex",
               justifyContent: "center",
               alignItems: "center",
+              // background: "green",
             }}
           >
             <div
               style={{
-                width: "100%",
-                maxWidth: "400px",
+                // width: "80%",
+                maxWidth: "370px",
                 justifyContent: "center",
                 alignItems: "center",
                 backgroundColor: "white",
                 borderRadius: 20,
-                padding: 20,
-                paddingTop: 40,
+                padding: 25,
+                // paddingTop: 40,
+                margin: "auto",
+                background: "white",
               }}
             >
               <div
                 style={{
                   alignItems: "center",
-                  display: "flex",
+                  // display: "flex",
+                  // background: "yellow",
                 }}
               >
                 <FaHotel style={{ fontSize: "20px", color: "black" }} />{" "}
@@ -108,6 +112,7 @@ export default function Main() {
                     height: "3.2vh",
                     borderRadius: 20,
                     marginTop: 10,
+                    height: 30,
                     borderRadius: 10,
                   }}
                 />
@@ -127,6 +132,7 @@ export default function Main() {
                             borderRadius: 999,
                             background: "white",
                             padding: 10,
+                            // height: 40,
                           }}
                         />
                       }
@@ -137,7 +143,7 @@ export default function Main() {
                         borderRadius: 20,
                         marginTop: 10,
                         width: "100%",
-                        borderRadius: 10,
+                        height: 30,
                       }}
                     />
                   </Col>
@@ -165,6 +171,7 @@ export default function Main() {
                         marginTop: 10,
                         width: "100%",
                         borderRadius: 10,
+                        height: 30,
                       }}
                     />
                   </Col>
@@ -194,21 +201,21 @@ export default function Main() {
                     borderRadius: 20,
                     marginTop: 10,
                     borderRadius: 10,
+                    height: 30,
                   }}
                 />
               </div>
               <ThemedButton
                 type="button"
                 style={{
-                  marginLeft: 10,
+                  // marginLeft: 10,
                   width: "100%",
                   padding: 10,
                   background: "black",
                   color: "white",
                   border: "none",
                   marginTop: "5vh",
-                  marginBottom: "10vh",
-                  
+                  // marginBottom: "10vh",
                 }}
               >
                 {MainSection?.btntextx}

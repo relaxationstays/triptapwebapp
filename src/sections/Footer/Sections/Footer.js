@@ -2,9 +2,14 @@ import React from "react";
 import { Layout, Row, Col } from "antd";
 import ThemedText from "../../../components/ThemedText/ThemedText";
 import "./Footer.css";
+import { useMediaQuery } from "react-responsive";
 const { Footer } = Layout;
 
 const FooterPage = () => {
+  // const isMobile = useMediaQuery(())
+  // const isMobile = useMediaQuery({ query: "(max-width: 768px)" });
+  const isMobile = useMediaQuery({ maxWidth: 767 });
+
   return (
     <Footer
       className="Footer"
@@ -69,7 +74,7 @@ const FooterPage = () => {
           </Col>
         </Row>
         <Row justify="space-around" style={{ marginTop: "10vh" }}>
-          <Col span={12}>
+          <Col span={10}>
             <div>
               <p
                 style={{
@@ -77,20 +82,21 @@ const FooterPage = () => {
                   color: "white",
                   textAlign: "left",
                   width: "100%",
+                  fontSize: isMobile ? 14 : 18,
                 }}
               >
                 Copyright © TripTrap 2023
               </p>
             </div>
           </Col>
-          <Col span={12}>
+          <Col span={14}>
             <div align="right">
               <p
                 style={{
                   margin: 0,
                   color: "white",
                   width: "100%",
-
+                  fontSize: isMobile ? 14 : 18,
                   textAlign: "right",
                 }}
               >

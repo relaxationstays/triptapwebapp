@@ -20,6 +20,12 @@ export default function Best() {
           </ThemedText>
         </Col>
         <Col span={isMobile ? 24 : 12}>
+          {isMobile && (
+            <>
+              <br />
+              <br />
+            </>
+          )}
           <ThemedText>{BestSection.title2}</ThemedText>
         </Col>
       </Row>
@@ -34,7 +40,7 @@ export default function Best() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           padding: isMobile ? 10 : 20,
-          margin: "20px",
+          margin: 10,
         }}
       >
         <div style={{ display: "block" }} className="container">

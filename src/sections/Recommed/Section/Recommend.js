@@ -18,6 +18,13 @@ export default function Recommend() {
           </ThemedText>
         </Col>
         <Col span={24} md={12}>
+          {isMobile && (
+            <>
+              <br />
+              <br />
+            </>
+          )}
+
           <ThemedText>{recommendSection.text2}</ThemedText>
           <br />
           <ThemedText>{recommendSection.text2x}</ThemedText>
@@ -58,6 +65,8 @@ export default function Recommend() {
                     flexDirection: "column",
                     justifyContent: "bottom",
                     flexGrow: 1,
+                    // background: "green",
+                    justifyContent: "center",
                   }}
                 >
                   <div

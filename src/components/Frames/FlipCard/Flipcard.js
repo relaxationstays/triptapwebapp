@@ -15,14 +15,9 @@ const FlipCard = ({ bg, index, promo, label, descp }) => {
     >
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <img
-            src={bg} // Replace with your image URL
-            alt="Background"
-            className="card-image"
-          />
-
+          <img src={bg} alt="Background" className="card-image" />
           <div className="icon bottom-right">
-            <ThemedText>{promo}</ThemedText>
+            <span style={{ fontWeight: "bold" }}>{promo}</span>
             <div>
               <LuCircleArrowOutUpRight size={30} />
             </div>
@@ -32,7 +27,7 @@ const FlipCard = ({ bg, index, promo, label, descp }) => {
           <div className="card-text">
             <h3>
               {text.split(" ").map((word, index) => (
-                <span key={index}>
+                <span key={index} style={{ textTransform: "capitalize" }}>
                   {word}
                   <br />
                 </span>
@@ -40,7 +35,6 @@ const FlipCard = ({ bg, index, promo, label, descp }) => {
             </h3>
             <p align="left">{descp}</p>
           </div>
-          {/* <FaInfoCircle /> */}
           <BsToggleOn size={40} className="icon top-right" />
         </div>
       </div>

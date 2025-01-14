@@ -4,10 +4,12 @@ import { BigPromoSection } from "../../../data/Data";
 import ThemedText from "../../../components/ThemedText/ThemedText";
 import { Col, Row } from "antd";
 import ThemedButton from "../../../components/Button/Button";
+import { useMediaQuery } from "react-responsive";
 
 const ChildComponent = () => {
+  const isMobile = useMediaQuery({ maxWidth: 767 });
   return (
-    <Row gutter={[16, 16]}>
+    <Row gutter={[16, 16]} style={{ paddingLeft: isMobile ? "10%" : "0" }}>
       <Col xs={24} md={12}>
         <ThemedText style={{ textTransform: "capitalize", fontSize: "3rem" }}>
           {BigPromoSection.text1}

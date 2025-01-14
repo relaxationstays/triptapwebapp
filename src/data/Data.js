@@ -1,8 +1,14 @@
+import { BiSolidHotel } from "react-icons/bi";
 import {
   FaArrowAltCircleLeft,
+  FaBusAlt,
+  FaCar,
   FaExchangeAlt,
   FaRegArrowAltCircleLeft,
 } from "react-icons/fa";
+import { FaTrainSubway } from "react-icons/fa6";
+import { GrSchedules } from "react-icons/gr";
+import { PiAirplaneTakeoff } from "react-icons/pi";
 
 // menuData.js
 export const headerDataSection = {
@@ -42,32 +48,32 @@ export const headerTwoSection = {
     {
       title: "hotels",
       id: 1,
-      icon: <FaRegArrowAltCircleLeft />,
+      icon: <BiSolidHotel />,
     },
     {
       title: "flights",
       id: 2,
-      icon: <FaExchangeAlt />,
+      icon: <PiAirplaneTakeoff />,
     },
     {
       title: "trains",
       id: 3,
-      icon: <FaArrowAltCircleLeft />,
+      icon: <FaTrainSubway />,
     },
     {
       title: "bus & travel",
       id: 4,
-      icon: <FaRegArrowAltCircleLeft />,
+      icon: <FaBusAlt />,
     },
     {
       title: "car rentals",
       id: 5,
-      icon: <FaExchangeAlt />,
+      icon: <FaCar />,
     },
     {
       title: "events",
       id: 6,
-      icon: <FaArrowAltCircleLeft />,
+      icon: <GrSchedules />,
     },
   ],
 };
