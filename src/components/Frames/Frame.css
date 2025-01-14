@@ -140,3 +140,8 @@
     margin: 10px auto;
   }
 }
+
+.flip-item:hover {
+  background-color: bisque !important;
+}
+

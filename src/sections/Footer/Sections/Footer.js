@@ -1,27 +1,38 @@
 import React from "react";
 import { Layout, Row, Col } from "antd";
 import ThemedText from "../../../components/ThemedText/ThemedText";
-
+import "./Footer.css";
 const { Footer } = Layout;
 
 const FooterPage = () => {
   return (
-    <Footer style={{ backgroundColor: "#000", color: "#fff", padding: 0 }}>
+    <Footer
+      className="Footer"
+      style={{
+        backgroundColor: "#000",
+        color: "#fff",
+        padding: 0,
+        paddingTop: 20,
+        paddingBottom: 20,
+        // textAlign: "center", // Center text in the footer
+      }}
+    >
       <div className="container">
-        <Row justify="center">
-          <Col>
-            <ThemedText
-              style={{
-                fontSize: "6rem",
-                fontWeight: "bold",
-                color: "#fff",
-                padding: 0,
-              }}
-            >
-              TripTrap.
-            </ThemedText>
-          </Col>
-        </Row>
+        <div style={{ textAlign: "center", width: "100%" }}>
+          <ThemedText
+            style={{
+              fontWeight: "bold",
+              color: "#fff",
+              padding: 0,
+              textAlign: "center",
+              width: "100%",
+              display: "block",
+              fontSize: `calc(100vw / 6)`,
+            }}
+          >
+            TripTrap.
+          </ThemedText>
+        </div>
         <Row justify="space-around" gutter={[16, 16]}>
           <Col xs={24} sm={12} md={8}>
             <h3 style={{ color: "#fff" }}>Tools</h3>
@@ -53,30 +64,43 @@ const FooterPage = () => {
           </Col>
           <Col xs={24} sm={12} md={4}>
             <h3 style={{ color: "#fff" }}>Contact</h3>
-            <ThemedText style={{ margin: 0, color: "white" }}>
-              Hello@greenify.com
-            </ThemedText>
-            <ThemedText style={{ margin: 0, color: "white" }}>
-              +32(2) 322 918 9484
-            </ThemedText>
+            <p style={{ margin: 0, color: "white" }}>Hello@greenify.com</p>
+            <p style={{ margin: 0, color: "white" }}>+32(2) 322 918 9484</p>
           </Col>
         </Row>
         <Row justify="space-around" style={{ marginTop: "10vh" }}>
-          <Col>
-            <ThemedText style={{ margin: 0, color: "white" }}>
-              Copyright © TripTrap 2023
-            </ThemedText>
+          <Col span={12}>
+            <div>
+              <p
+                style={{
+                  margin: 0,
+                  color: "white",
+                  textAlign: "left",
+                  width: "100%",
+                }}
+              >
+                Copyright © TripTrap 2023
+              </p>
+            </div>
           </Col>
-          <Col>
+          <Col span={12}>
             <div align="right">
-              <ThemedText style={{ margin: 0, color: "white" }}>
+              <p
+                style={{
+                  margin: 0,
+                  color: "white",
+                  width: "100%",
+
+                  textAlign: "right",
+                }}
+              >
                 <a href="/" style={{ color: "#fff", marginRight: "20px" }}>
                   Privacy Policy
                 </a>
                 <a href="/" style={{ color: "#fff" }}>
                   Terms Of Use
                 </a>
-              </ThemedText>
+              </p>
             </div>
           </Col>
         </Row>

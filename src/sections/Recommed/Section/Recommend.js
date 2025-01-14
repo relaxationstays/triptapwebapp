@@ -28,10 +28,19 @@ export default function Recommend() {
       <div className="container">
         <Row gutter={[16, 16]}>
           {recommendSection.array.map((item) => (
-            <Col span={24} md={12} lg={6} key={item.title}>
+            <Col
+              span={24}
+              md={12}
+              lg={6}
+              key={item.title}
+              style={{ position: "relative" }}
+            >
               <div
                 style={{
-                  ...centerDiv,
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  alignItems: "center",
                   height: isMobile ? "30vh" : "40vh",
                   borderRadius: 20,
                   backgroundImage: `url(${item.bg})`,
@@ -40,43 +49,40 @@ export default function Recommend() {
                   padding: 20,
                   margin: "20px 0",
                   position: "relative",
+                  // textAlign: "center", // Center-align text horizontally
                 }}
               >
                 <div
                   style={{
-                    marginTop: "auto",
-                    height: "50%",
-                    position: "relative",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "bottom",
+                    flexGrow: 1,
                   }}
                 >
-                  <div>
-                    <div
-                      style={{
-                        color: "white",
-                        width: "45%",
-                        fontWeight: "bold",
-                      }}
-                    >
-                      {item.title}
-                    </div>
-                    <div style={{ color: "white" }}>{item.description}</div>
-                    <br />
-                  </div>
-                  <ThemedButton
-                    type="button"
+                  <div
                     style={{
-                      width: "100%",
-                      padding: 10,
-                      background: "white",
-                      border: "none",
-                      marginTop: "5vh",
-                      marginBottom: "10vh",
-                      color: "black",
+                      color: "white",
+                      fontWeight: "bold",
+                      marginBottom: 10,
                     }}
                   >
-                    {item?.action}
-                  </ThemedButton>
+                    {item.title}
+                  </div>
+                  <div style={{ color: "white" }}>{item.description}</div>
                 </div>
+                <ThemedButton
+                  type="button"
+                  style={{
+                    width: "100%",
+                    padding: 10,
+                    // background: "green",
+                    border: "none",
+                    borderRadius: 5,
+                  }}
+                >
+                  {item?.action}
+                </ThemedButton>
               </div>
             </Col>
           ))}

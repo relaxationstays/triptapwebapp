@@ -208,6 +208,7 @@ export default function Main() {
                   border: "none",
                   marginTop: "5vh",
                   marginBottom: "10vh",
+                  
                 }}
               >
                 {MainSection?.btntextx}

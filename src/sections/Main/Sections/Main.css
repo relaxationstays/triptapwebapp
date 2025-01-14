@@ -1,6 +1,6 @@
 .main {
   position: relative;
-  height: 60vh;
+  /* height: 60vh; */
   background-image: url("https://www.travelandleisure.com/thmb/O_l4b5JDWtEWKQ7mE7PoA3rQdVk=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/cascade-mountains-range-USMNTNS0720-db9bdf21ee2e47b1868232c551c01006.jpg");
   background-size: cover;
   background-position: center;
@@ -8,6 +8,7 @@
   border-radius: 20px;
   overflow: hidden;
   margin: 20px;
+  padding: 5%;
 }
 
 .main::before {

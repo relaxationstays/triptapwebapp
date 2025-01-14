@@ -96,33 +96,36 @@ export const BigPromoSection = {
   btntext: "book Now",
   imagedata: [
     {
-      text1: null,
-      text1: null,
-      textimage: null,
+      text1: "Let's Explore Together",
       textimage: <FaRegArrowAltCircleLeft />,
+      promo: "Special Offer",
       bg: "https://static.vecteezy.com/system/resources/previews/028/534/308/non_2x/couple-young-travel-and-take-a-selfie-on-journey-generative-ai-free-photo.jpeg",
-    },
-    {
-      text1: "Let's",
-      text12: "Explore",
-      text13: "Together",
       text2:
-        "At TripTap, the world is our playground, and every joruney is an oppoturnity to discover something new. Join us as we explore the wondors of the world and create memories that will last a lifetime",
+        "Embark on a journey with us and uncover new horizons, create lasting memories, and make every trip extraordinary.",
+    },
+    {
+      text1: "Our adventure awaits",
+      promo: "New heights",
+      text2:
+        "At TripTap, the world is our playground, and every journey is an opportunity to discover something new. Join us as we explore the wonders of the world and create memories that will last a lifetime.",
       textimage: <FaExchangeAlt />,
+      bg: "https://qph.cf2.quoracdn.net/main-qimg-7fac816f2dca689c9d8d24079bb19ab6-lq",
     },
     {
-      text1: null,
-      text2: null,
+      text1: "Snowy winter wonderland",
       textimage: <FaRegArrowAltCircleLeft />,
+      promo: "Year End Promo",
+      bg: "https://america.sullair.com/sites/default/files/2020-01/Snowmaking1.png",
+      text2:
+        "Experience the magic of a snowy escape this winter. From cozy cabins to thrilling slopes, adventure awaits!",
+    },
+    {
+      text1: "Flight next week",
       promo: "Ramadam Promo",
-      bg: "https://media.istockphoto.com/id/1040911866/photo/many-little-fluffy-clouds-in-blue-sky-in-sunny-day.jpg?s=612x612&w=0&k=20&c=6POksbDFbEkPRs1yE7-77VvBrGK3Za8kT37SZdmVKAY=",
-    },
-    {
-      text1: null,
-      text2: null,
-      // textimage: null,
       textimage: <FaRegArrowAltCircleLeft />,
-      bg: "https://static.toiimg.com/thumb/109978505/hill-station.jpg?width=1200&height=900",
+      bg: "https://images.pexels.com/photos/112116/pexels-photo-112116.jpeg?cs=srgb&dl=pexels-tarik-nachat-28300-112116.jpg&fm=jpg",
+      text2:
+        "Plan your next journey during Ramadan and enjoy exclusive offers on flights, destinations, and more.",
     },
   ],
 };
