@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap");
+
+body {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  /* font-weight: 900; */
+  font-style: normal;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 5px;
+  }
+}

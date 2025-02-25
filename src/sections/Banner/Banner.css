@@ -1,0 +1,18 @@
+.lineartodown {
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgb(244, 186, 162)
+  );
+  padding-top: 20px;
+}
+
+.text-gradient {
+  background: linear-gradient(
+    to bottom,
+    rgba(250, 248, 248, 0),
+    rgb(46, 44, 43)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
